@@ -15,9 +15,10 @@
     
     <div class="main">
         <h2>Marks Calculator</h2>
-         <input type="number" id="one" placeholder="Marks You've Got" onkeyup="btn()" required>
-          <input type="number" id="two" placeholder="Total Marks" onkeyup="btn()" required>
-          <input type="button" value="Calc" onclick="answer()" id="but" disabled> 
+         <input type="number" id="one" placeholder="Marks You've Got" onkeyup="btn()" onclick="document.getElementById('myInput').value = ''" required>
+          <input type="number" id="two" placeholder="Total Marks" onkeyup="btn()" onclick="document.getElementById('myInput').value = ''"  required>
+          <input type="button" value="Calc" onclick="answer()" id="but" disabled>
+          <input type="button" 
           <h1 id="result">Result will be here :)</h1> 
     </div>
 
